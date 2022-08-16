@@ -20,8 +20,8 @@ const Tweets = ({}) => {
         tweets.map( t => 
           <div key={t.id}>
             <img src={t.user.profile_image_url}  alt='profile' />
-            <h3>{tweets.user.name}</h3>
-            <p>{tweets.text}</p>
+            <h3>{t.user.name}</h3>
+            <p>{t.text}</p>
           </div>
         )
       }
